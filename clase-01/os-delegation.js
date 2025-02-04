@@ -6,8 +6,7 @@ const start = Date.now();
 // Network
 function pingURL(url = 'http://google.com') {
 	http.request(url, res => {
-		res.on('data', () => {
-		});
+		res.on('data', () => {});
 		res.on('end', () => {
 			console.info(`Ping URL`, Date.now() - start, 'ms');
 		})
@@ -27,15 +26,16 @@ fs.readFile(__filename, (err, data) => {
 	console.log("File read:", Date.now() - start, 'ms', data);
 });
 
-pingURL();
+//
+multiThread();
+multiThread();
 
-// multiThread();
-// multiThread();
-//
-// multiThread();
-// multiThread();
-//
-// console.log('event loop');
+pingURL(); // delega al OS
+
+multiThread();
+multiThread();
+
+console.log('event loop');
 
 /** Threadpool default size = 4 */
 //	http -> OS

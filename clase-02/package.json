@@ -1,0 +1,19 @@
+{
+  "name": "clustering",
+  "version": "0.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node 03-clustering.js"
+  },
+  "keywords": [
+    "node.js",
+    "clustering",
+    "express"
+  ],
+  "author": "Juan Jose Cruz Ortiz (https://jjco.dev/)",
+  "license": "GPL",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

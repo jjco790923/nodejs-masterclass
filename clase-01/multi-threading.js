@@ -1,13 +1,16 @@
 /** cambiar tamaño del ThreadPool
- * Windows:	$env:UV_THREADPOOL_SIZE=1; fileName
- * linux:	UV_THREADPOOL_SIZE=1 fileName
- */
-/**
+ * Windows PowerShell:	$env:UV_THREADPOOL_SIZE=1; node <fileName>
+ * Windows CMD:			set UV_THREADPOOL_SIZE=1 && node <filename>
+ * linux:				UV_THREADPOOL_SIZE=1 node <filename>
+ * bash:				export UV_THREADPOOL_SIZE=1 && node <filename>
+ *
  * La función crypto.pbkdf2 en Node.js se utiliza para generar claves criptográficas seguras
  * a partir de contraseñas o frases de contraseña. Esta función implementa el algoritmo PBKDF2
  * (Password-Based Key Derivation Function 2), que es un estándar para derivar claves de manera segura.
  */
 
+
+console.log(process.env.UV_THREADPOOL_SIZE);
 // en este ejercicio usamos pbkdf2, para probar como funciona el Thread Pool de libuv
 const crypto = require('crypto');
 const start = Date.now();
