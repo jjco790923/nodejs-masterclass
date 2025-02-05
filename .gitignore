@@ -14,7 +14,8 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 .idea
 # webp converter
 cwebp.exe
-
+# package-lock.json
+package-lock.json
 # Runtime data
 pids
 *.pid
