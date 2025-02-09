@@ -10,6 +10,7 @@ const {arch, availableParallelism, cpus, totalmem, loadavg, freemem, userInfo, m
 console.info(
 	type(),
 	arch(),
+	version(),
 	// availableParallelism(),
 	// cpus(),
 	hostname(),
@@ -18,9 +19,7 @@ console.info(
 	// freemem(),
 	userInfo(),
 	// machine(),
-	version(),
 );
-
 
 function logMemoryUsage() {
 	const memoryUsage = process.memoryUsage();

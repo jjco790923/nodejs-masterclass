@@ -36,17 +36,3 @@ multiThread();
 multiThread();
 
 console.log('event loop');
-
-/** Threadpool default size = 4 */
-//	http -> OS
-//		1		2		3		4	??????
-//	______	______	______	______	______
-// 		FS	Crypto	Crypto	Crypto	Crypto
-
-// readFile
-
-//		1		2		3		4	??????
-//	______	______	______	______	______
-// 		FS	Crypto	Crypto	Crypto	Crypto
-
-
